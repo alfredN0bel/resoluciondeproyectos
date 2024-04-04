@@ -132,9 +132,26 @@ function fourteenthExercise(){
 }
 
 //Crea una variable "nota" y asígnale un valor numérico. Utiliza un if-else para determinar si la nota es mayor o igual a 7 y muestra "Aprobado" o "Reprobado" en la consola.
-
+function fifteenthExercise(){
+let nota= 5
+if (nota>=7) {
+    console.log("aprobado")   
+} else {
+    console.log("desaprobado")
+}
+}
 //Utiliza Math.random para generar cualquier número aleatorio y muestra ese número en la consola.
-
+function sixteenthExercise(){
+    let numeroAleatorio= Math.floor(Math.random()*9999)+1;
+    console.log(numeroAleatorio)
+}
 //Utiliza Math.random para generar un número entero entre 1 y 10 y muestra ese número en la consola.
-
+function seventeenthExercise(){
+    let numeroAleatorio= Math.floor(Math.random()*10)+1;
+    console.log(numeroAleatorio)
+}
 //Utiliza Math.random para generar un número entero entre 1 y 1000 y muestra ese número en la consola.
+function eighteenthExercise(){
+    let numeroAleatorio= Math.floor(Math.random()*1000)+1;
+    console.log(numeroAleatorio)
+}
