@@ -220,6 +220,52 @@ function twentyeighthExercise(){
  function twentyninthExercise(){
     let numero1=parseInt(prompt("ingrese un numero"));
     alert(`el numero multiplicado por si mismo resulta:  ${numero1*numero1}`)
-
-
 }
+//Crea una función que calcule el índice de masa corporal (IMC) de una persona a partir de su altura en metros y peso en kilogramos, que se recibirán como parámetros.
+function thirtiethExercise(){
+    let altura=parseFloat(prompt("ingrese un altura en metros"));
+    let peso =parseFloat(prompt("ingrese un peso en kilogramos"));
+      alert(` Su índice de masa corporal es de ${peso/Math.pow(altura,2)}`)
+}
+//Crea una función que calcule el valor del factorial de un número pasado como parámetro.
+function thirtyFirtsExercise(){
+    let valorDeUsuario = parseFloat(prompt("ingrese un numero "))
+    let total=1;
+    for (let iteracion = 1; iteracion <=valorDeUsuario ; iteracion++) {
+        total=total*iteracion;
+        console.log(total);          
+    }
+    alert (" el resultado es:"  + total)
+}
+
+//Crea una función que convierta un valor en dólares, pasado como parámetro, y devuelva el valor equivalente en reales(moneda brasileña,si deseas puedes hacerlo con el valor del dólar en tu país). Para esto, considera la cotización del dólar igual a R$4,80.
+function thirtySecondExercise(){
+    let dolares=parseFloat(prompt("ingrese la cantidad de solares a cambiar a reales brasileños"));
+    let reales=dolares*4.8;
+    alert(`usted por ${dolares}  dolares obtendra ${reales}  reales brasileños`)
+}
+//Crea una función que muestre en pantalla el área y el perímetro de una sala rectangular, utilizando la altura y la anchura que se proporcionarán como parámetros.
+function thirtyThirdExercise(){
+    let altura=parseFloat(prompt("ingrese la altura de la sala (valor en metros)"));
+    let ancho=parseFloat(prompt("ingrese el ancho de la sala (valor en metros)"));
+    let perimetro= (ancho*2) + (altura*2);
+    let area= ancho*altura;
+    alert( `el area de la sala es de  ${area}  ${area===1? "metro" : "metros"}; y un perimetro de ${perimetro} ${perimetro===1? "metro" : "metros"}`);
+}
+//Crea una función que muestre en pantalla el área y el perímetro de una sala circular, utilizando su radio que se proporcionará como parámetro. Considera Pi = 3,14.
+function thirtyFortythExercise(){
+    let radio=parseFloat(prompt("ingrese el radio de la sala (valor en metros)"));
+    let perimetro = 2 * Math.PI * radio;
+    let area=Math.pow(radio,2) * Math.PI
+    alert (`el area de la sala es de  ${area}  ${area===1? "metro cuadrado" : "metros cuadrados"}; y un perimetro de ${perimetro} ${perimetro===1? "metro cuadrado" : "metros cuadrados"}`)
+}
+//Crea una función que muestre en pantalla la tabla de multiplicar de un número dado como parámetro.
+function thirtyFiftythExercise(){
+    let mensaje="";
+    let numero=parseFloat(prompt("Ingrese un numero para obtener su tabla de multiplicar"));
+    for(let i=1; i<=20; i++) { 
+        mensaje += `${numero} X ${i} = ${numero * i}\n`;
+    }
+    alert(mensaje)
+}
+
