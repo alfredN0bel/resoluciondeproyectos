@@ -155,3 +155,54 @@ function eighteenthExercise(){
     let numeroAleatorio= Math.floor(Math.random()*1000)+1;
     console.log(numeroAleatorio)
 }
+//Cambia el contenido de la etiqueta h1 con document.querySelector y asigna el siguiente texto: "Hora del Desafío".
+function nineteenthExercise(){
+    let titulo1=document.querySelector("h1")
+    titulo1.innerHTML="Hora del Desafío"
+}
+//Crea una función que muestre en la consola el mensaje "El botón fue clicado" siempre que se presione el botón " verifica el resultado".
+function twentiethExercise(){
+    console.log("El botón fue clicado")
+}
+//Crea una función que se ejecute cuando se haga clic en el botón "Verifica el resultado", preguntando el nombre de una ciudad de Brasil. Luego, muestra una alerta con el mensaje concatenando la respuesta con el texto: "Estuve en {ciudad} y me acordé de ti".
+function twentyfirstExercise(){
+    let pregunta=prompt("Mencione el nombre de una ciudad de Brasil");
+    alert(`Estuve en ${pregunta} y me acordé de ti`);
+}
+//Crea una función que muestre una alerta con el mensaje: "Yo amo JS" siempre que se presione el botón "Verifica el resultado".
+function twentySecondExercise(){
+    alert("Yo amo JS");
+}
+//Al hacer clic en el botón "Verifica el resultado", pide 2 números y muestra el resultado de la suma en una alerta.
+function twentyThirdExercise(){
+    let numero1=parseInt(prompt("ingrese el primer numero"));
+    let numero2=parseInt(prompt("ingrese el segundo numero"));
+    let suma=numero1 + numero2;
+    alert(`el resultado es :  ${suma}`)
+}
+//Crear una función que muestre "¡Hola, mundo!" en la consola.
+function twentyfourthExercise(){
+    console.log("¡Hola, mundo!");
+}
+//Crear una función que reciba un nombre como parámetro y muestre "¡Hola, [nombre]!" en la consola.
+function twentyfifthExercise(){
+    let nombre=prompt("ingrese su nombre por favor")
+    console.log(`"¡Hola, ${nombre}"`)
+}
+//Crear una función que reciba un número como parámetro y devuelva el doble de ese número.
+function twentysixthExercise(){
+    let numero=parseInt(prompt("ingrese un numero por favor"))
+    let doblenumero=numero*2.
+    alert(`el doble del valor ingresado es:  ${doblenumero}`)
+}
+
+//Crear una función que reciba tres números como parámetros y devuelva su promedio.
+function twentysevenExercise(){
+    let numero1=parseInt(prompt("ingrese el primer numero"))
+    let numero2=parseInt(prompt("ingrese el segundo numero"))
+    let numero3=parseInt(prompt("ingrese el tercer numero"))
+
+    alert(`Su promedio es ${(numero1+numero2+numero3)/3}`)
+}
+//Crear una función que reciba dos números como parámetros y devuelva el mayor de ellos.
+//Crear una función que reciba un número como parámetro y devuelva el resultado de multiplicar ese número por sí mismo.
