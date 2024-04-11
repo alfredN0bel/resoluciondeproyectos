@@ -114,7 +114,7 @@ function thirteenth(){
         alert("el numero ingresado es positivo")        
     } else if (numero<0){
         alert("el numero ingresado es negativo")
-    }else if(numero=0){
+    }else if(numero==0){
         alert("el numero ingresado es cero")
     }else{
         alert("el valor ingresado no es un numero")
@@ -197,7 +197,7 @@ function twentysixthExercise(){
 }
 
 //Crear una función que reciba tres números como parámetros y devuelva su promedio.
-function twentysevenExercise(){
+function twentyseventhExercise(){
     let numero1=parseInt(prompt("ingrese el primer numero"))
     let numero2=parseInt(prompt("ingrese el segundo numero"))
     let numero3=parseInt(prompt("ingrese el tercer numero"))
@@ -205,4 +205,21 @@ function twentysevenExercise(){
     alert(`Su promedio es ${(numero1+numero2+numero3)/3}`)
 }
 //Crear una función que reciba dos números como parámetros y devuelva el mayor de ellos.
+function twentyeighthExercise(){
+    let numero1=parseInt(prompt("ingrese el primer numero"))
+    let numero2=parseInt(prompt("ingrese el segundo numero"))
+ if (numero1>numero2) {
+    alert(`el numero mayor es ${numero1}`)
+    
+ } else {
+    alert (`el numero mayor es ${numero2}`)
+    
+ }
+}
 //Crear una función que reciba un número como parámetro y devuelva el resultado de multiplicar ese número por sí mismo.
+ function twentyninthExercise(){
+    let numero1=parseInt(prompt("ingrese un numero"));
+    alert(`el numero multiplicado por si mismo resulta:  ${numero1*numero1}`)
+
+
+}
